@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>website</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">Akash..</h1>
+    <nav>
+      <a href="">home</a>
+      <a href="Project.html">Projects</a>
+      <a href="Education.html">Education</a>
+      
+    </nav>
+    
+  </header>
+
+  <section class="Home">
+    <div class="content">
+      <h4>Hello, it's me</h4>
+      <h1><span>Akash Patil</span> <br> Frontend Developer </h1>
+      <p>Frontend Developer with extensive knowledge of HTML, CSS,</br> JavaScript, Jquery, Bootstrap, React.js, and AWS-Linux.</br> Comfortable with debugging and troubleshooting </br>existing code, as well as developing and maintaining custom applications</p>
+
+       <div class="button">
+        <a href="#" class="btn1">let's talk</a>
+        <a href="#" class="btn2">portfolio</a>
+       </div>
+    </div>
+
+    <div class="social">
+      <a href="https://www.linkedin.com/in/akash-patil-122657224/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/Akashp1304"><i class="fa-brands fa-github"></i></a>
+      <a href="https://app.netlify.com/teams/akashpatil0413/sites"><i class="fa-solid fa-paperclip"></i></a>
+    
+    </div>
+  </section>
+  
+
+  <script>
+    let greth = ["propaganda" , "hamid" ,"ali" ,"mohamad" , "samir"];
+    let add = greth.reduce(function ( acc , curent , endex , arrey){
+      return acc.length > curent.length ? acc : curent;
+    })
+
+     console.log(add);
+
+     const test = "1 , 2, 3, EE , l , z , e , r , o , _ , W , e , b , _ , S , c , o, o , l, 2 , 0 , Z";
+
+        let ansory = test.split("").filter( function (element ){
+          return element !== "," ;
+        }).map(function ( lem){
+
+        
+          return isNaN(parseInt(lem)) ? lem : "";
+        })
+  console.log(ansory);
+  let txt = "eLzeRO";
+  const exs= txt.split("").map(function ( emeel){
+    return emeel === emeel.toUpperCase() ? emeel.toLowerCase() :emeel.toLowerCase();
+  }).join("")
+
+  
+  console.log(exs)
+  let number = [10 , -20 , 30 , -3 , -4]
+  let nu = number.map( chil => {return -chil})
+  console.log(nu)
+
+  const el = "elz1234er4o";
+  let oss = el.split("").map(function (elet){
+    return isNaN(parseInt(elet)) ? elet : "";
+  }).join("").toUpperCase0();
+  console.log(oss)
+  </script>
+</body>
+</html>
